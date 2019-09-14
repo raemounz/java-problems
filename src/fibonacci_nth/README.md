@@ -1,4 +1,4 @@
-# Fibonacci Sequence
+# Fibonacci nth Element
 
 A Fibonacci-like sequence is a sequence of integers `a`<sub>`1`</sub>, `a`<sub>`2`</sub>, ... for which `a`<sub>`n`</sub> `= a`<sub>`n-1`</sub> `+ a`<sub>`n-2`</sub> for all `n > 2`. You are given the first two elements of the sequence `a`<sub>`1`</sub> and `a`<sub>`2`</sub>, and the 1-based index `n`. Output the n-th element of the sequence.
 
