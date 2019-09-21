@@ -16,7 +16,7 @@ public class Fibonacci {
     private static void fibonacciByStream(int num) {
         long start = System.nanoTime();
         Stream.iterate(new int[]{0, 1}, i -> new int[]{i[1], i[0] + i[1]}).map(i -> i[0]).limit(num).forEach(i -> System.out.print(i + " "));
-        System.out.println("\nUsing stream takes " + duration(start) + " ms to complete.\n");
+        System.out.println(String.format("\nUsing stream takes %d ms to complete.\n", duration(start)));
     }
 
     private static void fibonacciByForLoop(int num) {
@@ -29,7 +29,7 @@ public class Fibonacci {
             arr[0] = arr[1];
             arr[1] = temp;
         }
-        System.out.println("\nUsing for loop takes " + duration(start) + " ms to complete.");
+        System.out.println(String.format("\nUsing for loop takes %d ms to complete.", duration(start)));
     }
 
     private static long duration(long start) {

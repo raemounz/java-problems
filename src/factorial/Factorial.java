@@ -17,7 +17,7 @@ public class Factorial {
         long start = System.nanoTime();
         long factorial = LongStream.rangeClosed(1, num).reduce(1L, (a, b) -> a * b);
         System.out.print(factorial);
-        System.out.println("\nUsing stream takes " + duration(start) + " ms to complete.\n");
+        System.out.println(String.format("\nUsing stream takes %d ms to complete.\n", duration(start)));
     }
 
     private static void factorialByForLoop(int num) {
@@ -27,7 +27,7 @@ public class Factorial {
             factorial *= i;
         }
         System.out.print(factorial);
-        System.out.println("\nUsing for loop takes " + duration(start) + " ms to complete.");
+        System.out.println(String.format("\nUsing for loop takes %d ms to complete.", duration(start)));
     }
 
     private static long duration(long start) {
