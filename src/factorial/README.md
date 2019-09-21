@@ -1,6 +1,6 @@
 # Factorial
 
-The **factorial** of a positive integer `n`, denoted by `n!`, is the product of all positive integers less than or equal to n.
+The **factorial** of a positive integer `n`, denoted by `n!`, is the product of all positive integers less than or equal to `n`.
 
 For instance, `4!` is `24` (that is `1 x 2 x 3 x 4`).
 
